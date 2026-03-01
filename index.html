@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Un Mes Contigo, Jazmín ❤️</title>
+<title>Un Mes Contigo ❤️</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
@@ -19,15 +19,13 @@ body{
     background:#000;
     color:#ff2e2e;
     min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     padding:30px;
     overflow-x:hidden;
 }
 
 .container{
     max-width:900px;
+    margin:auto;
     text-align:center;
     animation: fadeIn 2s ease-in-out;
 }
@@ -66,6 +64,20 @@ button:hover{
     transform:scale(1.05);
 }
 
+.mensaje-oculto{
+    margin-top:60px;
+    opacity:0;
+    transform:translateY(20px);
+    transition:all 1s ease;
+    display:none;
+}
+
+.mensaje-oculto.mostrar{
+    display:block;
+    opacity:1;
+    transform:translateY(0);
+}
+
 .hearts{
     position:fixed;
     width:100%;
@@ -95,7 +107,7 @@ button:hover{
 <div class="hearts"></div>
 
 <div class="container">
-    <h1>FELIZ PRIMER MES JAZMÍN ❤️</h1>
+    <h1>FELIZ PRIMER MES ❤️</h1>
 
     <p>
         Ayer cumplimos nuestro primer mes juntos, mami…
@@ -116,26 +128,41 @@ button:hover{
 
         <br><br>
 
-        Gracias por elegirme.
-        Gracias por confiar en mí.
-        Gracias por compartir tu tiempo, tu cariño y tu corazón conmigo.
-
-        <br><br>
-
-        Y si este fue solo el primer mes,
-        no puedo imaginar lo hermoso que será todo lo que viene.
-
-        <br><br>
-
         Te amo muchísimo, hoy y siempre ❤️
     </p>
 
-    <button onclick="mensaje()">Haz clic aquí ❤️</button>
+    <button onclick="mostrarMensaje()">Haz clic aquí ❤️</button>
+
+    <div id="mensajeExtra" class="mensaje-oculto">
+        <p>
+            Si llegaste hasta aquí, quiero decirte algo todavía más profundo…
+
+            <br><br>
+
+            No solo agradezco este mes.
+            Agradezco tu paciencia, tu forma de entenderme,
+            tu manera de abrazarme incluso cuando no estás físicamente aquí.
+
+            <br><br>
+
+            Eres paz, eres alegría,
+            eres esa persona que quiero seguir eligiendo todos los días.
+            Y si el destino me preguntara qué quiero para el futuro,
+            mi respuesta siempre tendría tu nombre.
+
+            <br><br>
+
+            Te amo más de lo que las palabras pueden explicar, mami ❤️
+        </p>
+    </div>
+
 </div>
 
 <script>
-function mensaje(){
-    alert("Te amo mami ❤️ Gracias por este primer mes tan hermoso.");
+function mostrarMensaje(){
+    const mensaje = document.getElementById("mensajeExtra");
+    mensaje.classList.add("mostrar");
+    mensaje.scrollIntoView({ behavior: "smooth" });
 }
 
 function crearCorazon(){
