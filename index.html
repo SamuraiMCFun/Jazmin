@@ -1,35 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Jazmin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Un Mes Contigo, Jazmín ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#000;
+    color:#ff2e2e;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    overflow-x:hidden;
+}
+
+.container{
+    max-width:900px;
+    text-align:center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+h1{
+    font-size:65px;
+    color:#ffffff;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+p{
+    font-size:20px;
+    line-height:1.9;
+}
+
+button{
+    margin-top:40px;
+    padding:15px 35px;
+    border:none;
+    background:#d4af37;
+    color:#000;
+    font-weight:700;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#b9962e;
+    transform:scale(1.05);
+}
+
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+}
+
+.heart{
+    position:absolute;
+    bottom:-20px;
+    color:#ff0000;
+    font-size:18px;
+    animation: float 7s linear infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(0); opacity:1;}
+    100%{transform:translateY(-100vh); opacity:0;}
+}
+</style>
 </head>
-<body style="background-color: #000000; margin: 0; padding: 20px; min-height: 90vh; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
 
-    <!-- Decoraciones: líneas doradas -->
-    <div style="position: absolute; top: 10%; left: 5%; right: 5%; height: 3px; background-color: #FFD700; border-radius: 2px;"></div>
-    <div style="position: absolute; bottom: 10%; left: 5%; right: 5%; height: 3px; background-color: #FFD700; border-radius: 2px;"></div>
-    <div style="position: absolute; top: 20%; left: 15%; width: 3px; height: 60vh; background-color: #FFD700; border-radius: 2px;"></div>
-    <div style="position: absolute; top: 20%; right: 15%; width: 3px; height: 60vh; background-color: #FFD700; border-radius: 2px;"></div>
+<body>
 
-    <!-- Decoraciones: círculos dorados -->
-    <div style="position: absolute; top: 8%; left: 3%; width: 15px; height: 15px; background-color: #FFD700; border-radius: 50%;"></div>
-    <div style="position: absolute; top: 8%; right: 3%; width: 15px; height: 15px; background-color: #FFD700; border-radius: 50%;"></div>
-    <div style="position: absolute; bottom: 8%; left: 3%; width: 15px; height: 15px; background-color: #FFD700; border-radius: 50%;"></div>
-    <div style="position: absolute; bottom: 8%; right: 3%; width: 15px; height: 15px; background-color: #FFD700; border-radius: 50%;"></div>
+<div class="hearts"></div>
 
-    <!-- Rosas decorativas en tono dorado -->
-    <img src="https://cdn-icons-png.flaticon.com/512/102/102849.png" alt="Rosa decorativa" style="position: absolute; top: 5%; left: 5%; width: 20%; max-width: 120px; opacity: 0.7; filter: hue-rotate(30deg) saturate(1.5); transform: rotate(-15deg);">
-    <img src="https://cdn-icons-png.flaticon.com/512/102/102849.png" alt="Rosa decorativa" style="position: absolute; bottom: 5%; right: 5%; width: 20%; max-width: 120px; opacity: 0.7; filter: hue-rotate(30deg) saturate(1.5); transform: rotate(15deg);">
-    <img src="https://cdn-icons-png.flaticon.com/512/102/102850.png" alt="Rosa decorativa" style="position: absolute; top: 25%; right: 10%; width: 15%; max-width: 100px; opacity: 0.7; filter: hue-rotate(30deg) saturate(1.5); transform: rotate(5deg);">
-    <img src="https://cdn-icons-png.flaticon.com/512/102/102850.png" alt="Rosa decorativa" style="position: absolute; bottom: 25%; left: 10%; width: 15%; max-width: 100px; opacity: 0.7; filter: hue-rotate(30deg) saturate(1.5); transform: rotate(-5deg);">
+<div class="container">
+    <h1>FELIZ PRIMER MES JAZMÍN ❤️</h1>
 
-    <!-- Mensaje principal -->
-    <div style="text-align: center; z-index: 10; padding: 15px; border: 2px solid #FFD700; border-radius: 10px; background-color: rgba(255, 215, 0, 0.05);">
-        <h1 style="color: #FFD700; font-family: Arial, sans-serif; font-size: 5vw; min-font-size: 2rem; text-shadow: 0 0 8px #FFCC00; margin: 10px 0;">Jazmin,</h1>
-        <h2 style="color: #FFD700; font-family: Arial, sans-serif; font-size: 6vw; min-font-size: 2.5rem; text-shadow: 0 0 10px #FFCC00; margin: 10px 0;">¿Quieres ser mi novia?</h2>
-    </div>
+    <p>
+        Ayer cumplimos nuestro primer mes juntos, mami…
+        y quiero que sepas que este mes ha sido uno de los más especiales de mi vida.
+
+        <br><br>
+
+        Gracias por cada momento, bebé,
+        por cada risa, cada palabra, cada mirada que hace que todo valga la pena.
+        Desde que estás conmigo, mi mundo tiene más sentido, más alegría y más ilusión.
+
+        <br><br>
+
+        Mi niña, me haces sentir una felicidad que no sabía que necesitaba.
+        Me haces sentir querido, acompañado y completo.
+        Este primer mes me demostró que contigo quiero seguir escribiendo esta historia,
+        paso a paso, momento a momento.
+
+        <br><br>
+
+        Gracias por elegirme.
+        Gracias por confiar en mí.
+        Gracias por compartir tu tiempo, tu cariño y tu corazón conmigo.
+
+        <br><br>
+
+        Y si este fue solo el primer mes,
+        no puedo imaginar lo hermoso que será todo lo que viene.
+
+        <br><br>
+
+        Te amo muchísimo, hoy y siempre ❤️
+    </p>
+
+    <button onclick="mensaje()">Haz clic aquí ❤️</button>
+</div>
+
+<script>
+function mensaje(){
+    alert("Te amo mami ❤️ Gracias por este primer mes tan hermoso.");
+}
+
+function crearCorazon(){
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (Math.random() * 20 + 10) + "px";
+    heart.style.animationDuration = (Math.random() * 4 + 4) + "s";
+    document.querySelector(".hearts").appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },7000);
+}
+
+setInterval(crearCorazon, 400);
+</script>
 
 </body>
 </html>
